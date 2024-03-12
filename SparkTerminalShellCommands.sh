@@ -27,3 +27,7 @@ sbin/start-worker.sh spark://localhost:7077
 
 #Command to stop Spark worker in the terminal in a particular port(7077)
 sbin/stop-worker.sh spark://localhost:7077
+
+#hdfs command to save the file into hdfs and then check it
+hdfs dfs -put text.txt /user/aaron.misquith/
+hdfs dfs -ls /user/aaron.misquith/
