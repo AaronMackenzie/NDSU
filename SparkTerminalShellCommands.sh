@@ -31,3 +31,9 @@ sbin/stop-worker.sh spark://localhost:7077
 #hdfs command to save the file into hdfs and then check it
 hdfs dfs -put text.txt /user/aaron.misquith/
 hdfs dfs -ls /user/aaron.misquith/
+
+
+
+
+conf.set("spark.executor.memory", "4g")  # Set executor memory to 4 GB
+print(sc._conf.get("spark.executor.memory"))
